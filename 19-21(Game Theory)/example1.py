@@ -20,5 +20,5 @@ def f(h):
 
 
 if __name__ == '__main__':
-    for i in range(1, 54):
+    for i in range(1, 56):
         print(i, f(i))

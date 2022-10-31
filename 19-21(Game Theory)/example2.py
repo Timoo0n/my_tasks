@@ -11,13 +11,13 @@ def f(h):
     if sum(h) >= 74:
         return 'END'
     elif any(f(x) == 'END' for x in moves(h)):
-        return 'Ï1'
-    elif all(f(x) == 'Ï1' for x in moves(h)):
-        return 'Â1'
-    elif any(f(x) == 'Â1' for x in moves(h)):
-        return 'Ï2'
-    elif all(f(x) == 'Ï1' or f(x) == 'Ï2' for x in moves(h)):
-        return 'Â2'
+        return 'ÐŸ1'
+    elif all(f(x) == 'ÐŸ1' for x in moves(h)):
+        return 'Ð’1'
+    elif any(f(x) == 'Ð’1' for x in moves(h)):
+        return 'ÐŸ2'
+    elif all(f(x) == 'ÐŸ1' or f(x) == 'ÐŸ2' for x in moves(h)):
+        return 'Ð’2'
 
 
 if __name__ == '__main__':
