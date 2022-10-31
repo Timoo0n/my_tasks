@@ -25,7 +25,7 @@ def f(s, c, m):
 def task19():  # Ответ: 13
     for s in range(1, 30):
         for m in range(1, 5):
-             if f(s, 0, m) == 1 and m == 2:
+            if f(s, 0, m) == 1 and m == 2:
                 print(s, m)
                 # Если нашлась выигрышная стратегия, то не копаем дальше
                 break
