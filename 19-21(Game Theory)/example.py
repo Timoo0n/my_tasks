@@ -36,7 +36,7 @@ def task20():  # Ответ: 4
         for m in range(1, 5):
             if f(s, 0, m) == 1:
                 if m == 3:
-                   print(s, m)
+                    print(s, m)
                 break
 
 
