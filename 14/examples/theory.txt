@@ -1,0 +1,4 @@
+bin - 2
+oct - 8
+hex - 16
+int('...', sn) sn <= 36

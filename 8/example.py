@@ -57,8 +57,50 @@ def f14():
     return sum([1 for i in permutations('ДЕЙКСТРА', r=6) if i.count('Й') == 1 and any(j in ''.join(i) for j in ['ЙД', 'ЙК', 'ЙС', 'ЙТ', 'ЙР'])])
 
 
+def f15():
+    return sum([1 for i in set(permutations('ВАЙФУ', r=4)) if i[0] != 'Й' and all(j not in ''.join(i) for j in ('ВФ', 'ФВ'))])
+
+
+def f16():
+    return sum([1 for _ in set(permutations('МИМИКРИЯ'))])
+
+
+def f17():
+    count = 0
+    for i in product('ЕЛМРУ', repeat=4):
+        count += 1
+
+        if i[0] == 'Л':
+            return count
+
+
+def f18():
+    count = 0
+    for i in product('АГИЛМОРТ', repeat=4):
+        count += 1
+        if ''.join(i)[-2:] == 'ИМ':
+            print(''.join(i), count)
+
+
+def f19():
+    count = 0
+    for i in product('АИМРЯ', repeat=4):
+        count += 1
+        if ''.join(i) == 'АРИЯ':
+            print(count)
+            break
+
+
+def f20():
+    count = 0
+    for i in product('АИМРЯ', repeat=4):
+        count += 1
+        if count == 211:
+            print(''.join(i))
+
+
 def main():
-    print(f14())
+    f20()
 
 
 if __name__ == '__main__':
