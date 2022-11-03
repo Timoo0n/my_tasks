@@ -49,8 +49,16 @@ def f12():
     return sum([1 for i in product('ГЕПАРД', repeat=5) if i.count('Г') == 1 and i[0] != 'А' and i[-1] != 'Е'])
 
 
+def f13():
+    return sum([1 for i in range(100, 1000) if str(i)[0] <= str(i)[1] <= str(i)[2]])
+
+
+def f14():
+    return sum([1 for i in permutations('ДЕЙКСТРА', r=6) if i.count('Й') == 1 and any(j in ''.join(i) for j in ['ЙД', 'ЙК', 'ЙС', 'ЙТ', 'ЙР'])])
+
+
 def main():
-    print(f12())
+    print(f14())
 
 
 if __name__ == '__main__':
