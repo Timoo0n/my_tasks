@@ -63,13 +63,13 @@ class Homework2:
     def f2_10(self):
         print('X Y Z')
         for x, y, z in self.__my_list1:
-            if(not (x == (y <= z))) == 1:
+            if (not (x == (y <= z))) == 1:
                 print(x, y, z)
 
     def f2_11(self):
         print('X Y W Z')
         for x, y, w, z in self.__my_list:
-            if not ((y <= x) or (not((x<= z) and (z <= x))) and (not w)):
+            if not ((y <= x) or (not((x <= z) and (z <= x))) and (not w)):
                 print(x, y, w, z)
 
     def f2_12(self):
