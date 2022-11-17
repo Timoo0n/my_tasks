@@ -1,6 +1,6 @@
 def read_csv():
     with open('18.csv') as csvfile:
-        return [list(map(lambda el: int(el),i.strip().split(';'))) for i in csvfile]
+        return [list(map(lambda el: int(el), i.strip().split(';'))) for i in csvfile]
 
 
 def main():
