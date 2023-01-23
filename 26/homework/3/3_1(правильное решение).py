@@ -14,6 +14,7 @@ with open('26.txt', 'r', encoding='utf-8') as file:
     saved_v = []  # сохраним по условию видео, пока не займут половину или более
     for i in sorted(my_v):
         if sum(saved_v) <= n // 2: saved_v += [i]
+        else: break
 
     # 2)
     n1 = n - sum(saved_v)
