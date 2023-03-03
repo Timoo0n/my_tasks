@@ -17,7 +17,6 @@ def taskA():
 def taskB():
     with open('27_B.txt', 'r', encoding='utf-8') as file:
         info = int(file.readline())
-        k = 0
 
         q = []
         s = 0
